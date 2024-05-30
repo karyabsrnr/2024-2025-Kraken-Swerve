@@ -29,7 +29,7 @@ public class Swerve extends SubsystemBase {
   public SwerveDriveOdometry swerveOdometry;
   public SwerveModule[] mSwerveMods;
   public Pigeon2 gyro;
-  
+
   public Swerve() {
     gyro = new Pigeon2(Constants.Swerve.pigeonID);
     gyro.getConfigurator().apply(new Pigeon2Configuration());
@@ -134,3 +134,4 @@ public void periodic(){
 
 }
 
+//Double check that we are actually using the external CANcoder for teleop
