@@ -8,7 +8,7 @@ package frc.robot;
 import frc.robot.commands.Autos;
 import frc.robot.subsystems.Swerve;
 import edu.wpi.first.wpilibj.GenericHID;
-import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.Joystick; 
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.InstantCommand;
@@ -28,8 +28,10 @@ import frc.robot.subsystems.*;
  */
 public class RobotContainer {
     /* Controllers */
-    private final Joystick driver = new Joystick(0);
-
+    private final XboxController driveJoy = new XboxController(0);
+    private final XboxController opJoy = new XboxController(1);
+    public JoystickContainer joyStick = new JoystickContainer(driveJoy, opJoy);
+//Use to be Joystick not XboxController
     /* Drive Controls */
     private final int translationAxis = XboxController.Axis.kLeftY.value;
     private final int strafeAxis = XboxController.Axis.kLeftX.value;

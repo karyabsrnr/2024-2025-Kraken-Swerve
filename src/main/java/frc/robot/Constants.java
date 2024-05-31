@@ -16,7 +16,7 @@ public final class Constants {
     public static final double stickDeadband = 0.1;
 
     public static final class Swerve {
-        public static final int pigeonID = 1;
+        public static final int pigeonID = 10;
 
         public static final COTSTalonFXSwerveConstants chosenModule =  //TODO: This must be tuned to specific robot
         COTSTalonFXSwerveConstants.SDS.MK4i.KrakenX60(COTSTalonFXSwerveConstants.SDS.MK4i.driveRatios.L3);
