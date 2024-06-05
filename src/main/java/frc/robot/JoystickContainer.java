@@ -20,34 +20,34 @@ public class JoystickContainer {
         return new JoystickButton(operatorJoystick, buttonId);
     }
 
-    public double driveRawAxis(int axisId) {
-        return driverJoystick.getRawAxis(axisId);
-    }
+    // public double driveRawAxis(int axisId) {
+    //     return driverJoystick.getRawAxis(axisId);
+    // }
 
-     public double opRawAxis(int axisId) {
-        return operatorJoystick.getRawAxis(axisId);
-    }
+    //  public double opRawAxis(int axisId) {
+    //     return operatorJoystick.getRawAxis(axisId);
+    // }
 
 
-    public double driveAxis(int axisId) {
-        final double DEADZONE = .05;
-        double rawAxis = driverJoystick.getRawAxis(axisId);
-        if (Math.abs(rawAxis) < DEADZONE) {
-            return 0.0;
-        } else {
-            return rawAxis;
-        }
-    }
+    // public double driveAxis(int axisId) {
+    //     final double DEADZONE = .05;
+    //     double rawAxis = driverJoystick.getRawAxis(axisId);
+    //     if (Math.abs(rawAxis) < DEADZONE) {
+    //         return 0.0;
+    //     } else {
+    //         return rawAxis;
+    //     }
+    // }
 
-    public double operatorAxis(int axisId) {
-        final double DEADZONE = .05;
-        double rawAxis = operatorJoystick.getRawAxis(axisId);
-        if (Math.abs(rawAxis) < DEADZONE) {
-            return 0.0;
-        } else {
-            return rawAxis;
-        }
-    }
+    // public double operatorAxis(int axisId) {
+    //     final double DEADZONE = .05;
+    //     double rawAxis = operatorJoystick.getRawAxis(axisId);
+    //     if (Math.abs(rawAxis) < DEADZONE) {
+    //         return 0.0;
+    //     } else {
+    //         return rawAxis;
+    //     }
+    // }
 
 }
 
