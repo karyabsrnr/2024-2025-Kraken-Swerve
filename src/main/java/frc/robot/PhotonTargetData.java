@@ -19,6 +19,7 @@ public class PhotonTargetData {
 // Get a list of currently tracked targets.
 List<PhotonTrackedTarget> targets = result.getTargets();
 
+
 // Get the current best target.
 PhotonTrackedTarget target = result.getBestTarget();
 
